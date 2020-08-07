@@ -16,9 +16,9 @@
     "timeout": 2000,
     "ui": "bdd",
     "file": [
-        "src/js/tests/index.js"
+        "test/index.js"
     ],
     "watch-files": [
-        "src/js/tests/**/*.js"
+        "test/**/*.js"
     ]
 }

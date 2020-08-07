@@ -3,6 +3,7 @@
 const path = require('path')
 const { babel } = require('@rollup/plugin-babel')
 const { nodeResolve } = require('@rollup/plugin-node-resolve')
+import json from '@rollup/plugin-json'
 
 const BUNDLE = process.env.BUNDLE === 'true'
 const ESM = process.env.ESM === 'true'
@@ -15,7 +16,8 @@ const plugins = [
         exclude: 'node_modules/**',
         // Include the helpers in the bundle, at most one copy of each
         babelHelpers: 'bundled'
-    })
+    }),
+    json()
 ]
 
 if (BUNDLE) {
