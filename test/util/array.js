@@ -1,5 +1,5 @@
 const expect = require('chai').expect;
-import { sumArray, multiplyArray } from '../../src/js/src/util/array';
+import { sumArray, multiplyArray } from '../../src/js/library/util/array';
 
 // Test suite
 describe('ARRAY FUNCTIONS', () => {
