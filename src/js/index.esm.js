@@ -1,5 +1,5 @@
-import Currency from './library/util/currency';
+import App from './app';
 
 export {
-    Currency
+    App
 }

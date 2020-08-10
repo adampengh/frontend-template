@@ -1,11 +1,5 @@
-import Currency from './library/util/currency';
-
-// Assign modules to window.ikea global object
-window.library = window.library || {};
-window.library.frontend = {
-    Currency
-};
+import App from './app';
 
 export default {
-    Currency
+    App
 }
