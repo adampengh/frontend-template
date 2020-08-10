@@ -17,36 +17,12 @@
 // ==========================================================================
 module.exports = {
     server: {
-        baseDir: "./site"
+        baseDir: './dist'
     },
-    files: ["dist/**", "site/**"],
+    files: ['dist/**'],
     watch: true,
     watchEvents: [
-        "change"
+        'change'
     ],
     logFileChanges: true
 };
-
-// ==========================================================================
-// IKEA Proxy Configuration
-// ==========================================================================
-// module.exports = {
-//     proxy: {
-//         target: "https://www.ikea.com/us/en/"
-//     },
-//     serveStatic: ["dist"],
-//     files: ["dist/**"],
-//     snippetOptions: {
-//         rule: {
-//             match: /<\/body>/i,
-//             fn: function (snippet, match) {
-//                 return '<link rel="stylesheet" href="/css/styles.css"/><script src="/js/script.js"></script>' + snippet + match;
-//             }
-//         }
-//     },
-//     watch: true,
-//     watchEvents: [
-//         "change"
-//     ],
-//     logFileChanges: true
-// };
