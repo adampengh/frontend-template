@@ -22,4 +22,3 @@ export {
     sumArray,
     multiplyArray
 }
-

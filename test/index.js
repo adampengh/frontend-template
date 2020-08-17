@@ -8,4 +8,4 @@ describe('MOCHA', () => {
     });
 });
 
-require('./util/array');
+require('./library/array');
