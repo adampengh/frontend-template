@@ -6,14 +6,10 @@ import json from '@rollup/plugin-json'
 
 module.exports = {
     input: 'src/js/script.js',
-    // external: ['jquery'],
     output: [{
         file: 'dist/js/script.js',
         format: 'iife',
-        name: 'frontend',
-        // globals: {
-        //     jquery: '$'
-        // }
+        name: 'frontend'
     }],
     plugins: [
         babel({
