@@ -7,7 +7,7 @@ module.exports = {
     input: './src/js/index.js',
     output: [{
         file: './dist/js/script.js',
-        format: 'umd',
+        format: 'iife',
         name: 'frontend'
     }],
     plugins: [
