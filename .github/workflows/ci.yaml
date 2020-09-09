@@ -1,7 +1,6 @@
 name: Develop Branch CI
 
 on:
-  pull_request:
   push:
 
 jobs:
