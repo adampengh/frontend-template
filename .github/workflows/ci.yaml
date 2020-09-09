@@ -8,10 +8,9 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - run: echo ${{github.ref}}
       - uses: actions/checkout@master
 
-      - name: Use Node.js
+      - name: Setup Node
         uses: actions/setup-node@v2
         with:
           node-version: "12"
