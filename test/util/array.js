@@ -6,7 +6,7 @@ describe('ARRAY FUNCTIONS', () => {
     const array = [1, 2, 3, 4, 5];
     describe('sumArray', () => {
         it('should accept an array', () => {
-            expect(array).to.be.a('array');
+            expect(array).to.be.a('string');
         });
         it('should return a number', () => {
             expect(sumArray(array)).to.be.a('number');
