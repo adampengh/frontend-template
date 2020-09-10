@@ -1,0 +1,25 @@
+name: Develop Branch CI
+
+on:
+  push:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@master
+
+      - name: Setup Node
+        uses: actions/setup-node@v1
+        with:
+          node-version: "12"
+
+      - name: Install
+        run: npm install
+
+      - name: Build
+        run: npm run build --if-present
+
+      - name: Test
+        run: npm test
